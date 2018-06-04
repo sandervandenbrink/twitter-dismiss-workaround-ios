@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIN-Zq-y9n">
+                                <rect key="frame" x="166" y="318" width="42" height="30"/>
+                                <state key="normal" title="Tweet"/>
+                                <connections>
+                                    <action selector="onTweet" destination="BYZ-38-t0r" eventType="touchUpInside" id="JOc-zF-0Ac"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPA-Db-GQH">
+                                <rect key="frame" x="46" y="268.5" width="283" height="30"/>
+                                <state key="normal" title="Show view controller without workaround"/>
+                                <connections>
+                                    <action selector="onShowBrokenViewController" destination="BYZ-38-t0r" eventType="touchUpInside" id="faq-Qz-hlB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6d-QF-6jG">
+                                <rect key="frame" x="57.5" y="218.5" width="260" height="30"/>
+                                <state key="normal" title="Show view controller with workaround"/>
+                                <connections>
+                                    <action selector="onShowWorkingViewController" destination="BYZ-38-t0r" eventType="touchUpInside" id="llJ-9a-wGR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="s6d-QF-6jG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.7" id="4cD-iw-W1l"/>
+                            <constraint firstItem="fIN-Zq-y9n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GEt-69-eDL"/>
+                            <constraint firstItem="fIN-Zq-y9n" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Tgi-in-LnN"/>
+                            <constraint firstItem="s6d-QF-6jG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ajq-Ve-1J8"/>
+                            <constraint firstItem="gPA-Db-GQH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e8T-Ci-aiX"/>
+                            <constraint firstItem="gPA-Db-GQH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.85" id="ys8-Kg-JTM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Workaround View Controller-->
+        <scene sceneID="vts-ZJ-kF1">
+            <objects>
+                <viewController storyboardIdentifier="WorkaroundViewController" id="QZS-Uq-iBi" customClass="WorkaroundViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qBP-8d-04q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPM-cW-mLP">
+                                <rect key="frame" x="166" y="318.5" width="42" height="30"/>
+                                <state key="normal" title="Tweet"/>
+                                <connections>
+                                    <action selector="onTweet" destination="QZS-Uq-iBi" eventType="touchUpInside" id="uaP-TA-UC0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RPM-cW-mLP" firstAttribute="centerY" secondItem="qBP-8d-04q" secondAttribute="centerY" id="ko1-kJ-o0a"/>
+                            <constraint firstItem="RPM-cW-mLP" firstAttribute="centerX" secondItem="qBP-8d-04q" secondAttribute="centerX" id="xrc-Vj-x2g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I2s-8d-4ko"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SHV-Du-j0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="684" y="32"/>
+        </scene>
+        <!--Broken View Controller-->
+        <scene sceneID="VHs-z0-lW9">
+            <objects>
+                <viewController storyboardIdentifier="BrokenViewController" id="Een-99-IeN" customClass="BrokenViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W29-I9-WFU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHa-jE-I8e">
+                                <rect key="frame" x="166" y="318.5" width="42" height="30"/>
+                                <state key="normal" title="Tweet"/>
+                                <connections>
+                                    <action selector="onTweet" destination="Een-99-IeN" eventType="touchUpInside" id="Dsv-OV-UjE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qHa-jE-I8e" firstAttribute="centerX" secondItem="W29-I9-WFU" secondAttribute="centerX" id="5NH-uL-I7D"/>
+                            <constraint firstItem="qHa-jE-I8e" firstAttribute="centerY" secondItem="W29-I9-WFU" secondAttribute="centerY" id="Slz-DH-ylD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7ZJ-TA-xi5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mS6-1i-g5j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1343" y="32"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C51B17C120C5881C0076D522 /* BrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C51B17C020C5881C0076D522 /* BrokenViewController.m */; };
+		C51B17C420C58A630076D522 /* WorkaroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C51B17C320C58A630076D522 /* WorkaroundViewController.m */; };
+		C52524D520AD99CE00159C39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C52524D420AD99CE00159C39 /* AppDelegate.m */; };
+		C52524D820AD99CE00159C39 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C52524D720AD99CE00159C39 /* ViewController.m */; };
+		C52524DB20AD99CE00159C39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52524D920AD99CE00159C39 /* Main.storyboard */; };
+		C52524DD20AD99D100159C39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C52524DC20AD99D100159C39 /* Assets.xcassets */; };
+		C52524E020AD99D100159C39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52524DE20AD99D100159C39 /* LaunchScreen.storyboard */; };
+		C52524E320AD99D200159C39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C52524E220AD99D200159C39 /* main.m */; };
+		C52524ED20AD9A5400159C39 /* TwitterShareExtensionUIResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C52524E920AD9A5300159C39 /* TwitterShareExtensionUIResources.bundle */; };
+		C52524EE20AD9A5400159C39 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52524EA20AD9A5300159C39 /* TwitterKit.framework */; };
+		C52524EF20AD9A5400159C39 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C52524EB20AD9A5300159C39 /* TwitterKitResources.bundle */; };
+		C52524F020AD9A5400159C39 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52524EC20AD9A5300159C39 /* TwitterCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C51B17BF20C5881C0076D522 /* BrokenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrokenViewController.h; sourceTree = "<group>"; };
+		C51B17C020C5881C0076D522 /* BrokenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrokenViewController.m; sourceTree = "<group>"; };
+		C51B17C220C58A630076D522 /* WorkaroundViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorkaroundViewController.h; sourceTree = "<group>"; };
+		C51B17C320C58A630076D522 /* WorkaroundViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkaroundViewController.m; sourceTree = "<group>"; };
+		C52524D020AD99CE00159C39 /* twitter-dismiss-fix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "twitter-dismiss-fix.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C52524D320AD99CE00159C39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C52524D420AD99CE00159C39 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C52524D620AD99CE00159C39 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C52524D720AD99CE00159C39 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C52524DA20AD99CE00159C39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C52524DC20AD99D100159C39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C52524DF20AD99D100159C39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C52524E120AD99D200159C39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C52524E220AD99D200159C39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C52524E920AD9A5300159C39 /* TwitterShareExtensionUIResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterShareExtensionUIResources.bundle; sourceTree = "<group>"; };
+		C52524EA20AD9A5300159C39 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		C52524EB20AD9A5300159C39 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
+		C52524EC20AD9A5300159C39 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C52524CD20AD99CE00159C39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C52524EE20AD9A5400159C39 /* TwitterKit.framework in Frameworks */,
+				C52524F020AD9A5400159C39 /* TwitterCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C52524C720AD99CE00159C39 = {
+			isa = PBXGroup;
+			children = (
+				C52524EC20AD9A5300159C39 /* TwitterCore.framework */,
+				C52524EA20AD9A5300159C39 /* TwitterKit.framework */,
+				C52524EB20AD9A5300159C39 /* TwitterKitResources.bundle */,
+				C52524E920AD9A5300159C39 /* TwitterShareExtensionUIResources.bundle */,
+				C52524D220AD99CE00159C39 /* twitter-dismiss-fix */,
+				C52524D120AD99CE00159C39 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C52524D120AD99CE00159C39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C52524D020AD99CE00159C39 /* twitter-dismiss-fix.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C52524D220AD99CE00159C39 /* twitter-dismiss-fix */ = {
+			isa = PBXGroup;
+			children = (
+				C52524D320AD99CE00159C39 /* AppDelegate.h */,
+				C52524D420AD99CE00159C39 /* AppDelegate.m */,
+				C52524D620AD99CE00159C39 /* ViewController.h */,
+				C52524D720AD99CE00159C39 /* ViewController.m */,
+				C51B17BF20C5881C0076D522 /* BrokenViewController.h */,
+				C51B17C020C5881C0076D522 /* BrokenViewController.m */,
+				C51B17C220C58A630076D522 /* WorkaroundViewController.h */,
+				C51B17C320C58A630076D522 /* WorkaroundViewController.m */,
+				C52524D920AD99CE00159C39 /* Main.storyboard */,
+				C52524DC20AD99D100159C39 /* Assets.xcassets */,
+				C52524DE20AD99D100159C39 /* LaunchScreen.storyboard */,
+				C52524E120AD99D200159C39 /* Info.plist */,
+				C52524E220AD99D200159C39 /* main.m */,
+			);
+			path = "twitter-dismiss-fix";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C52524CF20AD99CE00159C39 /* twitter-dismiss-fix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C52524E620AD99D200159C39 /* Build configuration list for PBXNativeTarget "twitter-dismiss-fix" */;
+			buildPhases = (
+				C52524CC20AD99CE00159C39 /* Sources */,
+				C52524CD20AD99CE00159C39 /* Frameworks */,
+				C52524CE20AD99CE00159C39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "twitter-dismiss-fix";
+			productName = "twitter-dismiss-fix";
+			productReference = C52524D020AD99CE00159C39 /* twitter-dismiss-fix.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C52524C820AD99CE00159C39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Sander van den Brink";
+				TargetAttributes = {
+					C52524CF20AD99CE00159C39 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = C52524CB20AD99CE00159C39 /* Build configuration list for PBXProject "twitter-dismiss-fix" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C52524C720AD99CE00159C39;
+			productRefGroup = C52524D120AD99CE00159C39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C52524CF20AD99CE00159C39 /* twitter-dismiss-fix */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C52524CE20AD99CE00159C39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C52524E020AD99D100159C39 /* LaunchScreen.storyboard in Resources */,
+				C52524DD20AD99D100159C39 /* Assets.xcassets in Resources */,
+				C52524DB20AD99CE00159C39 /* Main.storyboard in Resources */,
+				C52524ED20AD9A5400159C39 /* TwitterShareExtensionUIResources.bundle in Resources */,
+				C52524EF20AD9A5400159C39 /* TwitterKitResources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C52524CC20AD99CE00159C39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C51B17C120C5881C0076D522 /* BrokenViewController.m in Sources */,
+				C51B17C420C58A630076D522 /* WorkaroundViewController.m in Sources */,
+				C52524D820AD99CE00159C39 /* ViewController.m in Sources */,
+				C52524E320AD99D200159C39 /* main.m in Sources */,
+				C52524D520AD99CE00159C39 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C52524D920AD99CE00159C39 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C52524DA20AD99CE00159C39 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C52524DE20AD99D100159C39 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C52524DF20AD99D100159C39 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C52524E420AD99D200159C39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C52524E520AD99D200159C39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C52524E720AD99D200159C39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 877HMH2S96;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "twitter-dismiss-fix/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.exmachina.twitter-dismiss-fix";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C52524E820AD99D200159C39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 877HMH2S96;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "twitter-dismiss-fix/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.exmachina.twitter-dismiss-fix";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C52524CB20AD99CE00159C39 /* Build configuration list for PBXProject "twitter-dismiss-fix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C52524E420AD99D200159C39 /* Debug */,
+				C52524E520AD99D200159C39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C52524E620AD99D200159C39 /* Build configuration list for PBXNativeTarget "twitter-dismiss-fix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C52524E720AD99D200159C39 /* Debug */,
+				C52524E820AD99D200159C39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C52524C820AD99CE00159C39 /* Project object */;
+}
