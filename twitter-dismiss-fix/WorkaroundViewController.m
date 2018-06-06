@@ -95,7 +95,6 @@
         if (![child isKindOfClass:NSClassFromString(@"TWTRWebAuthenticationViewController")])
             continue;
         
-        // TODO: Determine whether the done button of the SFSafariViewController was pressed.
         for (UIViewController *childOfChild in child.childViewControllers) {
             if ([childOfChild isKindOfClass:NSClassFromString(@"SFSafariViewController")])
                 return (SFSafariViewController*)childOfChild;
