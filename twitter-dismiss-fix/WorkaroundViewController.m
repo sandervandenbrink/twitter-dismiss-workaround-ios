@@ -24,14 +24,14 @@
  WORKAROUND
  */
 - (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion {
-    
+
     // Do not dismiss view controller when user pressed the done button in the Safari Controller. This is to prevent a double dismiss caused by the Twitter SDK (see https://github.com/twitter/twitter-kit-ios/issues/16)
     if ([self isSafariViewControllerPresented:self.presentedViewController] && self.isSafariDoneButtonPressed) {
         NSLog(@"Twitter Safari controller dismissed with done button.");
         self.safariDoneButtonPressed = NO;
         return;
     }
-    
+
     [super dismissViewControllerAnimated:flag completion:completion];
 }
 
@@ -39,9 +39,9 @@
  WORKAROUND
  */
 - (void)presentViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag completion:(void (^)(void))completion {
-    
-    // Use delay because have to wait for viewDidLoad to be done on TWTRWebAuthenticationViewController so Safari controller is set as child.
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+
+    [super presentViewController:viewControllerToPresent animated:flag completion:^{
+        // Wait until present has completed so viewDidLoad has done on TWTRWebAuthenticationViewController and the Safari controller is set as child.
         SFSafariViewController *safariController = [self safariControllerFromViewController:viewControllerToPresent];
         
         if (safariController) {
@@ -49,9 +49,10 @@
             self.originalTwitterSafariDelegate = safariController.delegate;
             safariController.delegate = self; // Override delegate to intercept Done button press.
         }
-    });
-    
-    [super presentViewController:viewControllerToPresent animated:flag completion:completion];
+        
+        if (completion)
+            completion();
+    }];
 }
 
 - (IBAction)onTweet {
@@ -67,6 +68,17 @@
         
         NSLog(@"%@", [NSString stringWithFormat:@"Tweet was %@!", message]);
     }];
+}
+
+////////////////////////////////////////////////////////////////////////////////
+#pragma mark - SFSafariViewControllerDelegate
+
+- (void)safariViewControllerDidFinish:(SFSafariViewController *)controller {
+
+    self.safariDoneButtonPressed = YES;
+
+    if (self.originalTwitterSafariDelegate)
+        [self.originalTwitterSafariDelegate safariViewControllerDidFinish:controller];
 }
 
 ////////////////////////////////////////////////////////////////////////////////
